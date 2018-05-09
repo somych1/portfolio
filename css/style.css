@@ -1,0 +1,38 @@
+html, body{
+  height:100%;
+}
+
+body {
+	background-color: #FFFBF1;
+}
+
+.top {
+	height: 100%;
+}
+.start {
+	background-color: black;
+	height: 100%;
+	width : 100%;
+	border: 1px solid black;
+	display: flex;
+	justify-content: space-around;
+}
+
+.left, .wright {
+	display: flex;
+	width: 45%;
+	flex-direction: column;
+	justify-content: center;
+
+}
+img {
+	transform: rotateY(180deg);
+	width: 100%;
+}
+h1 {
+	align-self: center;
+	color: white;
+	font-family: Verdana;
+	font-size: 2em;
+	/*text-align: center;*/
+}
