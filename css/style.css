@@ -45,7 +45,6 @@ nav	{
 
 a {
 	width: 10%;
-	height: 10%;
 	margin: 1%;
 	font-size: 1em;
 	color: black;
@@ -54,6 +53,8 @@ a {
 .nav {
 	overflow: hidden;
 	border: 1px solid grey;
+	padding: 10px;
+	text-align: center;
 	display: flex;
 	justify-content: space-around;
 	width: 100%;
@@ -68,17 +69,17 @@ a {
 	width: 10%
 }
 .about{
-	height: 40%;
 	border-bottom: 1px solid grey;
-	margin-top: 5%;
-	margin-bottom: 5%;
+	margin-top: 40px;
+	padding-bottom: 5%;
+
 }
 
 .skills-section {
 	height: 40%;
 	border-bottom: 1px solid grey;
-	margin-top: 5%;
-	margin-bottom: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 .skills {
 	display: flex;
@@ -99,8 +100,8 @@ a {
 
 .projects {
 	height: 40%;
-	margin-top: 5%;
-	margin-bottom: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 
 }
 
@@ -144,4 +145,8 @@ button {
   position: fixed;
   top: 0;
   width: 100%
+}
+
+.sticky + .about {
+  padding-top: 51px;
 }
