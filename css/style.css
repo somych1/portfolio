@@ -52,6 +52,7 @@ a {
 }
 
 .nav {
+	overflow: hidden;
 	border: 1px solid grey;
 	display: flex;
 	justify-content: space-around;
@@ -137,4 +138,10 @@ button {
 }
 .selected {
 	background-color: blue;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
 }

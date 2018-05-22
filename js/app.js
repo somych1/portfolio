@@ -1,3 +1,19 @@
+$(document).ready(function() {
+   	const stickyNavTop = $('.nav').offset().top;
+   	const stickyNav = function(){
+	    const scrollTop = $(window).scrollTop();
+	    if (scrollTop > stickyNavTop) { 
+	        $('.nav').addClass('sticky');
+	    } else {
+	        $('.nav').removeClass('sticky'); 
+	    }
+	};
+	stickyNav();
+	$(window).scroll(function() {
+		stickyNav();
+	});
+});
+
 // Shoestring
 $('#3-1').on('click', function(){
 	$('#proj-3').attr('src', './public/imgs/shoestring-1.png'); 
