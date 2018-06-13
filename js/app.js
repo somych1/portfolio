@@ -3,15 +3,51 @@ $(document).ready(function() {
    	const stickyNav = function(){
 	    const scrollTop = $(window).scrollTop();
 	    if (scrollTop > stickyNavTop) { 
+	    	$('.nav').removeClass('no-nav');
 	        $('.nav').addClass('sticky');
 	    } else {
-	        $('.nav').removeClass('sticky'); 
+	        $('.nav').removeClass('sticky');
+	        $('.nav').addClass('no-nav');
 	    }
 	};
 	stickyNav();
 	$(window).scroll(function() {
 		stickyNav();
 	});
+});
+
+// shophd
+$('#4-1').on('click', function(){
+	$('#proj-4').attr('src', './public/imgs/shop-1.png'); 
+	$('#4-1').removeClass('selected');
+	$('#4-2').removeClass('selected');
+	$('#4-3').removeClass('selected');
+	$('#4-4').removeClass('selected');
+    $(this).addClass('selected');
+});
+$('#4-2').on('click', function(){
+	$('#proj-4').attr('src', 'public/imgs/shop-2.png');
+	$('#4-1').removeClass('selected');
+	$('#4-2').removeClass('selected');
+	$('#4-3').removeClass('selected');
+	$('#4-4').removeClass('selected');
+    $(this).addClass('selected');
+});
+$('#4-3').on('click', function(){
+	$('#proj-4').attr('src', 'public/imgs/shop-3.png');
+	$('#4-1').removeClass('selected');
+	$('#4-2').removeClass('selected');
+	$('#4-3').removeClass('selected');
+	$('#4-4').removeClass('selected');
+    $(this).addClass('selected');
+});
+$('#4-4').on('click', function(){
+	$('#proj-4').attr('src', 'public/imgs/shop-4.png');
+	$('#4-1').removeClass('selected');
+	$('#4-2').removeClass('selected');
+	$('#4-3').removeClass('selected');
+	$('#4-4').removeClass('selected');
+    $(this).addClass('selected');
 });
 
 // Shoestring
@@ -82,3 +118,9 @@ $('#1-3').on('click', function(){
 	$('#1-3').removeClass('selected');
     $(this).addClass('selected');
 });
+
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top-35
+    }, 500);
+})

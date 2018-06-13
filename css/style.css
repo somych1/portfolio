@@ -26,7 +26,8 @@ html, body{
 	width: 100%;
 }
 .profile-img {
-	transform: rotateY(180deg);
+	border-radius: 100%;
+	/*transform: rotateY(180deg);*/
 	width: 100%;
 }
 h1 {
@@ -59,6 +60,10 @@ a {
 	justify-content: space-around;
 	width: 100%;
 	background-color: white;
+}
+
+.no-nav {
+	display: none;
 }
 
 .container {
@@ -118,6 +123,7 @@ a {
 	margin-bottom: 5%;
 }
 .image {
+	height: 10%;
 	width: 100%;
 	border: 1px solid black;
 }
@@ -144,7 +150,8 @@ button {
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
+  overflow: hidden;
 }
 
 .sticky + .about {
